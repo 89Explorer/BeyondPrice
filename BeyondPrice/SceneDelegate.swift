@@ -14,9 +14,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         self.setupWindow(with: scene)
-        let nav = UINavigationController(rootViewController: ViewController())
+        let nav = UINavigationController(rootViewController: MainTabBarViewController())
+        let vc = MainTabBarViewController()
         nav.modalPresentationStyle = .fullScreen
-        self.window?.rootViewController = nav
+        self.window?.rootViewController = vc
     
     }
     
