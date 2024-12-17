@@ -9,9 +9,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    // MARK: - Variables
+    private let sections = Bundle.main.decode([Section].self, from: "appstore.json")
+    
     // MARK: - UI Components
     private let homeHeaderView: CustomHeaderView = CustomHeaderView(title: "투데이")
-    
     
     
     // MARK: - Life Cycle
